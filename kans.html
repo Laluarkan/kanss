@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online</title>
+    <link rel="stylesheet" href="kans.css">
+</head>
+<body>
+    <header>
+        <h1>Kanss.id</h1>
+    </header>
+    <nav>
+        <button class="menu-toggle">&#9776;</button>
+        <div class="menu">
+        <a href="#">Beranda</a>
+        <a href="#">Kategori</a>
+        <a href="#">Produk</a>
+        <a href="#">Kontak</a>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="hero">
+            <h2>Promo Spesial!</h2>
+            <p>Belanja sekarang dan dapatkan diskon menarik.</p>
+        </section>
+        <section class="products">
+            <div class="product">
+                <img src="gambar.jpg" alt="">
+                <p>Sepatu 1</p>
+                <p>Rp 50.000</p>
+            </div>
+            <div class="product">
+                <img src="gambar.jpg" alt="">
+                <p>Sepatu 2</p>
+                <p>Rp 50.000</p>
+            </div>
+            <div class="product">
+                <img src="gambar.jpg" alt="">
+                <p>Sepatu 3</p>
+                <p>Rp 50.000</p>
+            </div>
+            <div class="product">
+                <img src="gambar.jpg" alt="">
+                <p>Sepatu 4</p>
+                <p>Rp 50.000</p>
+            </div>
+            <div class="product">
+                <img src="gambar.jpg" alt="">
+                <p>Sepatu 5</p>
+                <p>Rp 50.000</p>
+            </div>
+            <div class="product">
+                <img src="gambar.jpg" alt="">
+                <p>Sepatu 6</p>
+                <p>Rp 50.000</p>
+            </div>
+            <div class="product">
+                <img src="gambar.jpg" alt="">
+                <p>Sepatu 6</p>
+                <p>Rp 50.000</p>
+            </div>
+            <div class="product">
+                <img src="gambar.jpg" alt="">
+                <p>Sepatu 7</p>
+                <p>Rp 50.000</p>
+            </div>
+            <div class="product">
+                <img src="gambar.jpg" alt="">
+                <p>Sepatu 7</p>
+                <p>Rp 50.000</p>
+            </div>
+            <div class="product">
+                <img src="gambar.jpg" alt="">
+                <p>Sepatu 7</p>
+                <p>Rp 50.000</p>
+            </div>
+            <div class="product">
+                <img src="gambar.jpg" alt="">
+                <p>Sepatu 7</p>
+                <p>Rp 50.000</p>
+            </div>
+            <div class="product">
+                <img src="gambar.jpg" alt="">
+                <p>Sepatu 7</p>
+                <p>Rp 50.000</p>
+            </div>
+            <div class="product">
+                <img src="gambar.jpg" alt="">
+                <p>Sepatu 7</p>
+                <p>Rp 50.000</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Toko Online. Semua Hak Dilindungi.</p>
+    </footer>
+    <script>
+            document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menu = document.querySelector(".menu");
+        const menuLinks = document.querySelectorAll(".menu a");
+
+        // Toggle menu saat tombol garis tiga diklik
+        menuToggle.addEventListener("click", function () {
+            menu.classList.toggle("show");
+        });
+
+        // Tutup menu saat salah satu link diklik
+        menuLinks.forEach(link => {
+            link.addEventListener("click", function () {
+                menu.classList.remove("show");
+            });
+        });
+    });
+    </script>
+</body>
+</html>
